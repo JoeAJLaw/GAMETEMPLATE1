@@ -191,11 +191,8 @@ def menu(exits):
             # If so, return the player's choice
             
         #print_menu(exits)
-        
-        if user_input == is_valid_exit(exits,user_input):
-         print (exit_leads_to(exits, user_input))
-        else:
-            print("input is invalid, try again")
+        normalised_user_input = normalise_input(user_input)
+        return normalised_user_input
     
 
 
